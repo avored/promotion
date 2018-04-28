@@ -102,7 +102,7 @@ class Module extends ServiceProvider
      */
     protected function registerAdminMenu()
     {
-        $systemMenu = AdminMenuFacade::get('system');
+        $shopMenu = AdminMenuFacade::get('shop');
 
         $reviewMenu = new AdminMenu();
         $reviewMenu->key('promotion')
@@ -110,7 +110,7 @@ class Module extends ServiceProvider
             ->route('admin.promotion.index')
             ->icon('fas fa-leaf');
 
-        $systemMenu->subMenu('promotion', $reviewMenu);
+        $shopMenu->subMenu('promotion', $reviewMenu);
     }
 
     /**
