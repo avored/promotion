@@ -12,8 +12,8 @@
   "type": "avored-module",
   "require": {
     "php": ">=7.1.3",
-    "avored/module-installer": "dev-master",
-    "avored/ecommerce": "dev-master"
+    "avored/module-installer": "1.*",
+    "avored/ecommerce": "1.*"
   },
 
   "autoload": {
